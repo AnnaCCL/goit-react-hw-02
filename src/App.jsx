@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Feedback from "./components/Feedback/Feedback";
 import Options from "./components/Options/Options";
-import Alerting from "./components/Alerting/Alerting";
+import Notification from "./components/Notification/Notification";
 import Description from "./components/Description/Description";
 
 const App = () => {
@@ -47,7 +47,7 @@ const App = () => {
           positivePercentage={positiveFeedback}
         />
       ) : (
-        <Alerting message="No feedback given" />
+        <Notification message="No feedback given" />
       )}
     </div>
   );
